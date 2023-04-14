@@ -29,18 +29,20 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url("https://community.adobe.com/t5/image/serverpage/image-id/97480i8CAFC0A8E58DA3DA?v=v2")`,
+        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundPosition: "center center",
       }}
     >
       <div className="banner__contents">
-        <h1 className="banner__title">Movie Name</h1>
+        <h1 className="banner__title">
+          {movie?.title || movie?.name || movie?.original_name}
+        </h1>
         <div className="banner__buttons">
           <button className="banner__button">Play</button>
           <button className="banner__button">My List</button>
         </div>
         <h1 className="banner__description">
-          {truncate(`this is a test description`, 150)}
+          {truncate(movie?.overview, 150)}
         </h1>
       </div>
       <div className="banner--fadeBottom" />
