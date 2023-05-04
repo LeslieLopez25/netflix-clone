@@ -19,3 +19,8 @@
     border: none;
     cursor: pointer;
 }
+
+.plansScreen__plan--disabled>button {
+    background-color: gray !important;
+    cursor: not-allowed;
+}

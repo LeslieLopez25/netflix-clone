@@ -17,6 +17,24 @@ import { loadStripe } from "@stripe/stripe-js";
 function PlansScreen() {
   const [products, setProducts] = useState([]);
   const user = useSelector(selectUser);
+  const [subscription, setSubscription] = useState(null);
+
+  useEffect(() => {
+    const q = query(collection(db, "customers", user.uid, "subscriptions"));
+
+    onSnapshot(q, (querySnapshot) => {
+      querySnapshot.forEach(async (subscription) => {
+        // console.log(subscription.data());
+
+        setSubscription({
+          role: subscription.data().role,
+          current_period_start:
+            subscription.data().current_period_start.seconds,
+          current_period_end: subscription.data().current_period_end.seconds,
+        });
+      });
+    });
+  }, [user.uid]);
 
   useEffect(() => {
     const q = query(collection(db, "products"), where("active", "==", true));
@@ -72,16 +90,37 @@ function PlansScreen() {
 
   return (
     <div className="plansScreen">
+      <br />
+      {subscription && (
+        <p className="plansScreen__renewal">
+          Renewal date: {""}
+          {new Date(subscription?.current_period_end * 1000).toLocaleDateString(
+            "CS"
+          )}
+        </p>
+      )}
       {Object.entries(products).map(([productId, productData]) => {
+        const isCurrentPackage = productData.name
+          ?.toLowerCase()
+          .includes(subscription?.role);
+
         return (
-          <div className="plansScreen__plan">
+          <div
+            key={productId}
+            className={`${
+              isCurrentPackage && "plansScreen__plan--disabled"
+            } plansScreen__plan`}
+          >
             <div className="plansScreen__info">
               <h5>{productData.name}</h5>
               <h6>{productData.description}</h6>
             </div>
-
-            <button onClick={() => loadCheckout(productData.prices.priceId)}>
-              Subscribe
+            <button
+              onClick={() =>
+                !isCurrentPackage && loadCheckout(productData.prices.priceId)
+              }
+            >
+              {isCurrentPackage ? "Current Plan" : "Subscribe"}
             </button>
           </div>
         );
