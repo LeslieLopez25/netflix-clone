@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./LoginScreen.css";
+import "../routes/LoginScreen.css";
 import SignupScreen from "./SignupScreen";
 
 function LoginScreen() {

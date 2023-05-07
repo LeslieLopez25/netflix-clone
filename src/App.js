@@ -3,7 +3,7 @@ import "./App.css";
 import HomeScreen from "./routes/HomeScreen";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginScreen from "./routes/LoginScreen";
-import { auth } from "./firebase";
+import { auth } from "./utils/firebase/firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 import { onAuthStateChanged } from "firebase/auth";

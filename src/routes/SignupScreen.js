@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import "./SignupScreen.css";
-import { auth } from "../firebase";
+import "../routes/SignupScreen.css";
+import { auth } from "../utils/firebase/firebase";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,

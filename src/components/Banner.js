@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./Banner.css";
-import axios from "./axios";
-import requests from "./Requests";
+import "../components/Banner.css";
+import axios from "../utils/axios/axios";
+import requests from "../utils/firebase/Requests";
 import { FaPlus, FaPlay } from "react-icons/fa";
 
 function Banner() {

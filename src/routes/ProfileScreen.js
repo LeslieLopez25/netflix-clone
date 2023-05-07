@@ -1,9 +1,9 @@
 import React from "react";
 import "../routes/ProfileScreen.css";
-import Nav from "../Nav";
+import Nav from "../components/Nav";
 import { useSelector } from "react-redux";
 import { selectUser } from "../features/userSlice";
-import { auth } from "../firebase";
+import { auth } from "../utils/firebase/firebase";
 import PlansScreen from "./PlansScreen";
 
 function ProfileScreen() {
