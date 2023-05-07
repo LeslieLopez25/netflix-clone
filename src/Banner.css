@@ -36,7 +36,6 @@
 
 .banner__button {
     cursor: pointer;
-    color: #fff;
     outline: none;
     border: none;
     font-weight: 700;
@@ -45,11 +44,38 @@
     padding-right: 2rem;
     margin-right: 1rem;
     padding-top: 0.5rem;
-    background-color: rgba(51, 51, 51, 0.5);
     padding-bottom: 0.5rem;
 }
 
-.banner__button:hover {
+.faplay {
+    position: relative;
+    top: 2px;
+    right: 3px;
+}
+
+.faplus {
+    position: relative;
+    top: 2px;
+    right: 3px;
+}
+
+.play {
+    color: #000;
+    background-color: #e6e6e6;
+}
+
+.play:hover {
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.5);
+    transition: all 0.2s;
+}
+
+.list {
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+.list:hover {
     color: #000;
     background-color: #e6e6e6;
     transition: all 0.2s;

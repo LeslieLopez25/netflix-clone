@@ -55,7 +55,13 @@
     background-color: #e50914;
     font-weight: 600;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+}
+
+.loginScreen__button:hover {
+    opacity: 0.8;
+    transition: all 100ms;
 }
 
 .loginScreen__logo {
@@ -72,6 +78,7 @@
     height: 30px;
     width: 30%;
     border: none;
+    border-radius: 5px;
     max-width: 600px;
 }
 
@@ -85,6 +92,13 @@
     color: #fff;
     background-color: #e50914;
     border: none;
+    border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
+    margin-left: 3px;
+}
+
+.loginScreen__getStarted:hover {
+    opacity: 0.8;
+    transition: all 100ms;
 }

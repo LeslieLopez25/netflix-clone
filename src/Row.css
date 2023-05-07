@@ -10,15 +10,11 @@
     padding: 20px;
 }
 
-.row__posters::-webkit-scrollbar {
-    display: none;
-}
-
 .row__poster {
-    max-height: 100px;
+    max-height: 250px;
     object-fit: contain;
     margin-right: 10px;
-    width: 100%;
+    max-width: 250px;
     transition: transform 450ms;
 }
 
@@ -28,7 +24,7 @@
 }
 
 .row_posterLarge {
-    max-height: 250px;
+    max-height: 350px;
 }
 
 .row__posterLarge:hover {

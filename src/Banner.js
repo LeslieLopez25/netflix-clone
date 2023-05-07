@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Banner.css";
 import axios from "./axios";
 import requests from "./Requests";
+import { FaPlus, FaPlay } from "react-icons/fa";
 
 function Banner() {
   const [movie, setMovie] = useState([]);
@@ -38,8 +39,13 @@ function Banner() {
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner__buttons">
-          <button className="banner__button">Play</button>
-          <button className="banner__button">My List</button>
+          <button className="banner__button play">
+            <FaPlay className="faplay" />
+            Play
+          </button>
+          <button className="banner__button list">
+            <FaPlus className="faplus" /> List
+          </button>
         </div>
         <h1 className="banner__description">
           {truncate(movie?.overview, 150)}
