@@ -46,6 +46,7 @@
     background-color: #e50914;
     font-weight: 600;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
