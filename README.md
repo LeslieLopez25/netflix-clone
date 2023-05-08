@@ -1,3 +1,24 @@
+<h1>Netflix Clone :popcorn:</h1>
+
+<h2>A Netflix clone created using React, Redux, and CSS as the frontend, Firebase as the backend, and Stripe for payment.</h2>
+
+<p>This website is responsive and it's built using React and CSS for the frontend, Firebase is used for the backend where you can sign up to make an account, Redux is used to store the user information, and Stripe is used to sign up for a plan and to process the payment.</p>
+
+### Link
+
+- Live Site: [Netflix](https://netflix-clone-26c81.web.app/)
+
+### Screenshots
+
+<img src="./assets/screenshot.png" width="400">
+<img src="./assets/screenshot-2.png" width="400">
+<img src="./assets/screenshot-3.png" width="400">
+<img src="./assets/screenshot-4.png" width="400">
+<img src="./assets/screenshot-5.png" width="400">
+<img src="./assets/screenshot-6.png" width="400">
+
+---
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
