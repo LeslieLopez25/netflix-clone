@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../components/Banner.css";
+import "../components/banner.styles.css";
 import axios from "../utils/axios/axios";
 import requests from "../utils/firebase/Requests";
 import { FaPlus, FaPlay } from "react-icons/fa";

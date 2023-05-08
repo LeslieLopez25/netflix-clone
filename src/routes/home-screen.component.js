@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "../components/Nav";
-import Banner from "../components/Banner";
+import Nav from "../components/nav.component";
+import Banner from "../components/banner.component";
 import requests from "../utils/firebase/Requests";
-import Row from "../components/Row";
+import Row from "../components/row.component";
 
 function HomeScreen() {
   return (

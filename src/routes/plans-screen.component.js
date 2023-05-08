@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import db from "../utils/firebase/firebase";
-import "../routes/PlansScreen.css";
+import "../routes/plans-screen.styles.css";
 import {
   collection,
   getDocs,

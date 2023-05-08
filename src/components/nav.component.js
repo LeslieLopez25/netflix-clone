@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../components/Nav.css";
+import "../components/nav.styles.css";
 import { useNavigate } from "react-router-dom";
 
 function Nav() {

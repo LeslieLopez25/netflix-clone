@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import HomeScreen from "./routes/HomeScreen";
+import HomeScreen from "./routes/home-screen.component";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginScreen from "./routes/LoginScreen";
+import LoginScreen from "./routes/login-screen.component";
 import { auth } from "./utils/firebase/firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 import { onAuthStateChanged } from "firebase/auth";
-import ProfileScreen from "./routes/ProfileScreen";
+import ProfileScreen from "./routes/profile-screen.component";
 
 function App() {
   const user = useSelector(selectUser);
