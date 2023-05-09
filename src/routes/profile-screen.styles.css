@@ -1,16 +1,16 @@
 .profileScreen {
+    color: hsl(0, 0%, 100%);
     height: 100vh;
-    color: white;
 }
 
 .profileScreen__body {
     display: flex;
     flex-direction: column;
-    width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 8%;
-    max-width: 800px;
+    max-width: 50rem;
+    width: 50%;
 }
 
 .profileScreen__info {
@@ -18,47 +18,56 @@
 }
 
 .profileScreen__details {
-    color: white;
-    margin-left: 25px;
+    color: hsl(0, 0%, 100%);
+    margin-left: 1.5625rem;
     flex: 1;
 }
 
 .profileScreen__body>h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 400;
-    border-bottom: 1px solid #282c2d;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid hsl(192, 5.9%, 16.7%);
 }
 
 .profileScreen__details>h2 {
-    background-color: gray;
-    padding: 15px;
-    font-size: 15px;
-    padding-left: 20px;
+    background-color: hsl(0, 0%, 50.2%);
+    font-size: 0.9375rem;
+    padding: 0.9375rem;
+    padding-left: 1.25rem;
 }
 
 .profileScreen__signOut {
-    padding: 10px 20px;
+    background-color: hsl(357, 92.4%, 46.7%);
+    color: hsl(0, 0%, 100%);
     font-size: 1rem;
-    margin-top: 5%;
-    width: 100%;
-    color: #fff;
-    background-color: #e50914;
     font-weight: 600;
+    margin-top: 5%;
+    padding: 0.625rem 1.25rem;
+    width: 100%;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .profileScreen__plans {
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 1.25rem;
 }
 
 .profileScreen__plans>h3 {
-    border-bottom: 1px solid #282c2d;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
+    border-bottom: 1px solid hsl(192, 5.9%, 16.7%);
 }
 
 .profileScreen__info>img {
-    height: 100px;
+    height: 6.25rem;
+}
+
+@media screen and (max-width: 40.625em) {
+    .profileScreen__plans {
+        position: relative;
+        right: 1.875rem;
+        top: 3.125rem;
+    }
 }

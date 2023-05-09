@@ -1,21 +1,21 @@
 .plansScreen__plan {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0.625rem;
     opacity: 0.8;
 }
 
 .plansScreen__plan:hover {
-    opacity: 1;
     transition: all 100ms;
+    opacity: 1;
 }
 
 .plansScreen__plan>button {
-    padding: 10px 20px;
+    background-color: hsl(357, 92.4%, 46.7%);
+    color: hsl(0, 0%, 100%);
     font-size: 1rem;
-    color: #fff;
-    background-color: #e50914;
     font-weight: 600;
+    padding: 0.625rem 1.25rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -24,4 +24,10 @@
 .plansScreen__plan--disabled>button {
     background-color: gray !important;
     cursor: not-allowed;
+}
+
+@media screen and (max-width: 40.625em) {
+    .plansScreen__plan>button {
+        margin-left: 1.25rem;
+    }
 }
