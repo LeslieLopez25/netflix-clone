@@ -102,3 +102,9 @@
     transition: all 100ms;
     opacity: 0.8;
 }
+
+@media screen and (max-width: 34.6875em) {
+    .loginScreen__gradient {
+        height: 60rem;
+    }
+}
