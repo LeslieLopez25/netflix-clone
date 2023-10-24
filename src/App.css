@@ -5,5 +5,6 @@
 @media screen and (max-width: 34.6875em) {
     .app {
         height: 100%;
+        overflow-x: hidden;
     }
 }
