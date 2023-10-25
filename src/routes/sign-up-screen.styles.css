@@ -1,14 +1,14 @@
 .signupScreen {
     background: rgba(0, 0, 0, 0.85);
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding: 1.25rem;
     max-width: 18.75rem;
 }
 
 .signupScreen>form>h1 {
-    text-align: left;
     margin-bottom: 1.5625rem;
+    text-align: left;
 }
 
 .signupScreen__gray {
@@ -16,8 +16,8 @@
 }
 
 .signupScreen>form>h4 {
-    text-align: left;
     margin-top: 1.875rem;
+    text-align: left;
 }
 
 .signupScreen>form {

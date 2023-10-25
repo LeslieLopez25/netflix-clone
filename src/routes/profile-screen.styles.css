@@ -6,8 +6,8 @@
 .profileScreen__body {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     max-width: 50rem;
     width: 50%;
 }
@@ -17,9 +17,9 @@
 }
 
 .profileScreen__details {
+    flex: 1;
     color: hsl(0, 0%, 100%);
     margin-left: 1.5625rem;
-    flex: 1;
 }
 
 .profileScreen__body>h1 {
@@ -50,8 +50,8 @@
 }
 
 .profileScreen__plans {
-    text-align: center;
     margin-top: 5rem;
+    text-align: center;
 }
 
 .profileScreen__plans>h3 {
@@ -86,13 +86,13 @@
 
 @media screen and (max-width: 25em) {
     .profileScreen__body>h1 {
-        margin-top: 4rem;
         font-size: 2.5rem;
+        margin-top: 4rem;
     }
 
     .profileScreen__plans {
+        margin-top: 5rem;
         margin-left: -10rem;
         padding-right: 2rem;
-        margin-top: 5rem;
     }
 }
