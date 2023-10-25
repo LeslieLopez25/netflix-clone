@@ -5,24 +5,23 @@
 <p>
 Features
 
-    Responsive Design: This Netflix clone is built with responsiveness in mind, ensuring an optimal viewing experience on various devices, from desktops to mobile phones.
+- Responsive Design: This Netflix clone is built with responsiveness in mind, ensuring an optimal viewing experience on various devices, from desktops to mobile phones.
 
-    User Registration: Utilizing Firebase, users can create and manage their accounts, enabling a personalized streaming experience.
+- User Registration: Utilizing Firebase, users can create and manage their accounts, enabling a personalized streaming experience.
 
-    State Management: Redux is employed to efficiently store and manage user data, enhancing the application's performance.
+- State Management: Redux is employed to efficiently store and manage user data, enhancing the application's performance.
 
-    Subscription Management: Stripe integration allows users to sign up for premium plans and process secure payments.
+- Subscription Management: Stripe integration allows users to sign up for premium plans and process secure payments.
 
 Technologies Used
 
-    React: A powerful JavaScript library for building dynamic user interfaces, providing a smooth and responsive streaming experience.
+- React: A powerful JavaScript library for building dynamic user interfaces, providing a smooth and responsive streaming experience.
 
-    Redux: State management made simple, ensuring efficient data flow and seamless user interactions throughout the application.
+- Redux: State management made simple, ensuring efficient data flow and seamless user interactions throughout the application.
 
-    Firebase: A scalable backend platform that offers secure authentication, real-time database, and hosting services, enabling smooth user experiences.
+- Firebase: A scalable backend platform that offers secure authentication, real-time database, and hosting services, enabling smooth user experiences.
 
-    Stripe: Industry-leading payment processing technology, providing a secure and reliable payment gateway for subscription services.
-
+- Stripe: Industry-leading payment processing technology, providing a secure and reliable payment gateway for subscription services.
 </p>
 
 ### Link
